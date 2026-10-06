@@ -247,7 +247,7 @@ export default {
       listButtonActiveIndex: -1,
       thisListPage: 1,
       musicTypeList: [{ name: "我的歌单", id: 0 }],
-      thisMusicType: 0,
+      thisMusicType: -1,
       notPlay: [],
       musicState: 0, //0列表循环  1单曲循环
       musicStateButton: state1,

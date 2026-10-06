@@ -40,7 +40,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    filter: blur(10px);
+    filter: blur(0px); /* 原 blur(10px) 已注释，封面不模糊 */
     background-size: 100% 100%;
     transition: all .5s;
     z-index: 99;
@@ -50,7 +50,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    filter: blur(5px);
+    filter: blur(0px); /* 原 blur(5px) 已注释 */
     background-size: 100% 100%;
     transition: all .5s;
     opacity: 0;
@@ -62,7 +62,7 @@
     background-color: rgba(0,0,0,0.1);
     transition: all .5s;
     border-radius: 5px;
-    filter: blur(2px);
+    filter: blur(0px); /* 原 blur(2px) 已注释 */
 }
 .music_dis{
     width: 100%;

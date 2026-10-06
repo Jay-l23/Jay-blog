@@ -1,4 +1,4 @@
-<template>
+﻿<template>
   <div>
     <!-- 聊天界面 -->
     <div
@@ -12,7 +12,7 @@
         <img
           width="32"
           height="32"
-          src="https://static.talkxj.com/config/logo.png"
+          src="/images/5.png"
         />
         <div style="margin-left:12px">
           <div>聊天室</div>
@@ -146,7 +146,7 @@
       <img
         width="100%"
         height="100%"
-        src="https://static.talkxj.com/config/logo.png"
+        src="/images/5.png"
       />
     </div>
   </div>

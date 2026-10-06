@@ -119,6 +119,7 @@
   flex: 1;
   line-height: 2;
   text-align: center;
+  padding: 0 10px;
 }
 hr {
   border: 2px dashed #d2ebfd;
