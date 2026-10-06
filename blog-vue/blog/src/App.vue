@@ -1,21 +1,21 @@
 <template>
   <v-app id="app">
     <!-- 导航栏 -->
-    <TopNavBar></TopNavBar>
+    <TopNavBar v-if="blogInfo.websiteConfig"></TopNavBar>
     <!-- 侧边导航栏 -->
-    <SideNavBar></SideNavBar>
+    <SideNavBar v-if="blogInfo.websiteConfig"></SideNavBar>
     <!-- 内容 -->
     <v-content>
-      <router-view :key="$route.fullPath" />
+      <router-view v-if="blogInfo.websiteConfig" :key="$route.fullPath" />
     </v-content>
     <!-- 页脚 -->
-    <Footer></Footer>
+    <Footer v-if="blogInfo.websiteConfig"></Footer>
     <!-- 返回顶部 -->
     <BackTop></BackTop>
     <!-- 搜索模态框 -->
     <searchModel></searchModel>
     <!-- 登录模态框 -->
-    <LoginModel></LoginModel>
+    <LoginModel v-if="blogInfo.websiteConfig"></LoginModel>
     <!-- 注册模态框 -->
     <RegisterModel></RegisterModel>
     <!-- 忘记密码模态框 -->

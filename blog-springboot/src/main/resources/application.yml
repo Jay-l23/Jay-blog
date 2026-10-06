@@ -10,9 +10,9 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/blog?serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    url: jdbc:mysql://123.206.121.189:3306/blog?serverTimezone=Asia/Shanghai&allowMultiQueries=true
     username: root
-    password: 1234
+    password: P#*01c8xks$1
     hikari:
       minimum-idle: 5
       # 空闲连接存活最大时间，默认600000（10分钟）
@@ -30,7 +30,7 @@ spring:
       connection-test-query: SELECT 1
   # redis配置
   redis:
-    host: localhost
+    host: 123.206.121.189
     port: 6379
     password: 123456
   # mq配置
@@ -82,10 +82,10 @@ search:
 
 # 上传模式 可选 oss或local  （http://和最后的/一定不能去！！！）
 upload:
-  mode: cos
+  mode: local
   local:
     # nginx映射本地文件路径，无域名则为 ip:83
-    url: http://www.ljcxy.cn/
+    url: http://123.206.121.189:83/
     # 本地文件存储路径
     path: /usr/local/upload/
   cos:
@@ -97,7 +97,7 @@ upload:
 
 # 网站前台域名（邮件通知用）
 website:
-  url: http://www.ljcxy.cn
+  url: http://123.206.121.189
 
 #第三方配置信息
 qq:
